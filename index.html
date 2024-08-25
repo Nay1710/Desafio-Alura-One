@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo__alura" src="./IMG/logo alura.png" alt="Logo da Alura">
+    </header>
+    <main>
+        <section>
+            <textarea class="textarea" cols="41" rows="4" placeholder="Digite seu texto..."></textarea>
+            <div>
+                <h6 class="informacao">Apenas letras minúsculas e sem acento!</h6>
+            </div>
+            <div class="botoes">
+                <button class="botao__criptografar" onclick="btnCriptografar()">Criptografar</button>
+                <button class="botao__descriptografar" onclick="btnDescriptografar()">Descriptografar</button>
+                <button class="botao__audio__digitado" onclick="lerTextoDigitado()"></button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensagem" id="mensagem" cols="35" rows="30"></textarea>
+            <div class="botoes__resultado">
+                <button class="botao__copiar" onclick="copiarTexto()">Copiar</button>
+                <button class="botao__audio__resultado" onclick="lerTextoResultado()"></button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+<footer class="rodape">Desenvolvido por Nayara Abdon</footer>
+</html>

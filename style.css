@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --cor-primaria: #2E073F;
+    --cor-secundaria: #7A1CAC;
+    --cor-terciaria: #AD49E1;
+    --cor-informacao: #EBD3F8;
+}
+
+* {
+    background-color: var(--cor-terciaria);
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.logo__alura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.textarea {
+    border: none;
+    color: white;
+    margin-top: 90px;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+::placeholder {color: var(--cor-primaria);}
+    .textarea:focus{
+        outline: none;
+    }
+
+.mensagem {
+    background: white;
+    background-image: url(./IMG/cripto.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /*faz com que a imagem seja redimensionada para caberdentro do text area*/
+    border: none;
+    border-radius: 24px;
+    color: var(--cor-primaria);
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    resize: none; /*Impede que a textarea seja redimensionada*/
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.botoes {
+    display: flex;
+    margin-top: 160px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao__criptografar {
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 250px;
+}
+
+.botao__descriptografar {
+    background: var(--cor-secundaria);
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 250px;
+}
+
+.botao__audio__digitado {
+    background: var(--cor-primaria);
+    background-image: url(./IMG/alto\ falante\ branco\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 80px;
+    margin-left: 30px; /* Ajuste este valor conforme necessário */
+    position: relative;
+}
+
+.botoes__resultado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.botao__copiar {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 140px;
+    margin-top: 402px;
+    position: absolute;
+    width: 140px;
+}
+
+.botao__audio__resultado {
+    background: var(--cor-terciaria);
+    background-image: url(./IMG/alto\ falante\ branco\ \(3\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-top: 402px;
+    width: 80px;
+    margin-left: 300px; /* Ajuste este valor conforme necessário */
+    position: relative;
+}
+
+.informacao {
+    color: var(--cor-informacao);
+    font-size: 14px;
+}
+
+.rodape {
+    color: var(--cor-primaria);
+    padding: 24px;
+    font-size: 10px;
+}
+
+footer {
+    margin-top: auto;
+}
