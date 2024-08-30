@@ -131,7 +131,7 @@ main {
 }
 
 .botao__audio__resultado {
-    background: var(--cor-terciaria);
+    background: var(--cor-secundaria);
     background-image: url(./IMG/alto\ falante\ branco\ \(3\).png);
     background-repeat: no-repeat;
     background-position: center;
